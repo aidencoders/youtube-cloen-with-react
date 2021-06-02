@@ -1,8 +1,16 @@
 import './app.css';
+import React, { useEffect, useState } from 'react';
 
-function App() {
+const App = (props) => {
+  const [videos, setVideos] = useState([]);
+  const [name, setName] = useState("twkim");
+
+  useEffect(() => {
+
+  }, [name, videos]);
+
   return (
-    <h1>Hello :)</h1>
+    <h1>Hello</h1>
   );
 }
 
